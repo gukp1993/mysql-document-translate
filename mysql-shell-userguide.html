@@ -1,96 +1,94 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Chapter 18 MySQL Shell</title>
-<link rel="stylesheet" href="mvl.css" type="text/css" />
-<meta name="generator" content="DocBook XSL Stylesheets + chunker.py v1.9.2" />
-<link rel="start" href="index.html" title="{book-title}" />
-<link rel="up" href="" title="" />
-<link rel="prev" href="group-replication.html" title="Chapter 17 Group Replication" />
-<link rel="next" href="document-store.html" title="Chapter 19 Using MySQL as a Document Store" />
-</head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Chapter&nbsp;18 MySQL Shell</title>
+    <link rel="stylesheet" href="mvl.css" type="text/css">
+    <meta name="generator" content="DocBook XSL Stylesheets + chunker.py v1.9.2">
+    <link rel="start" href="index.html" title="{book-title}">
+    <link rel="up" href="" title="">
+    <link rel="prev" href="group-replication.html" title="Chapter&nbsp;17 Group Replication">
+    <link rel="next" href="document-store.html" title="Chapter&nbsp;19 Using MySQL as a Document Store">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script><script src="https://code.jquery.com/jquery-3.3.1.min.js"></script><script src="https://code.jquery.com/jquery-3.3.1.min.js"></script></head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
 <div class="navheader">
-<table width="100%" summary="Navigation header">
-<tr>
-<th colspan="3" align="center">Chapter 18 MySQL Shell</th>
-</tr>
-<tr>
-<td width="20%" align="left"><a accesskey="p" href="group-replication.html">Prev</a> </td>
-<th width="60%" align="center"></th>
-<td width="20%" align="right"> <a accesskey="n" href="document-store.html">Next</a></td>
-</tr>
-</table>
-<hr>
+    <table width="100%" summary="Navigation header">
+        <tbody><tr>
+            <th colspan="3" align="center">Chapter&nbsp;18 MySQL Shell</th>
+        </tr>
+        <tr>
+            <td width="20%" align="left"><a accesskey="p" href="group-replication.html">Prev</a>&nbsp;</td>
+            <th width="60%" align="center"></th>
+            <td width="20%" align="right">&nbsp;<a accesskey="n" href="document-store.html">Next</a></td>
+        </tr>
+        </tbody></table>
+    <hr>
 </div>
 <div class="chapter">
-<div class="titlepage">
-<div>
-<div>
-<h1 class="title"><a name="mysql-shell-userguide"></a>Chapter 18 MySQL Shell</h1>
+    <div class="titlepage">
+        <div>
+            <div>
+                <h1 class="title"><a name="mysql-shell-userguide"></a>Chapter&nbsp;18&nbsp;MySQL Shell</h1>
 
-</div>
+            </div>
 
-</div>
+        </div>
 
-</div>
-<p>
-    MySQL Shell is an advanced client and code editor for MySQL
-    Server. In addition to the provided SQL functionality, similar to
-    <a class="link" href="programs.html#mysql" title="4.5.1 mysql — The MySQL Command-Line Client"><span class="command"><strong>mysql</strong></span></a>, MySQL Shell provides scripting
-    capabilities for JavaScript and Python and includes APIs for working
-    with MySQL.
-  </p><p>
+    </div>
+    <p>
+        MySQL Shell is an advanced client and code editor for MySQL
+        Server. In addition to the provided SQL functionality, similar to
+        <a class="link" href="programs.html#mysql" title="4.5.1&nbsp;mysql — The MySQL Command-Line Client"><span class="command"><strong>mysql</strong></span></a>, MySQL Shell provides scripting
+        capabilities for JavaScript and Python and includes APIs for working
+        with MySQL.
+    </p><p style="color:blue;">mysql shell是一个用于mysql服务器的高级客户端和代码编辑器。除了提供的sql功能（类似于mysql）之外，mysql shell还为javascript和python提供脚本编写功能，并包括使用mysql的api。</p><p>
     The following discussion briefly describes MySQL Shell's
     capabilities. For more information, see the MySQL Shell manual,
     available at <a class="ulink" href="https://dev.mysql.com/doc/mysql-shell/en/" target="_top">https://dev.mysql.com/doc/mysql-shell/en/</a>.
-  </p><p>
+</p><p style="color:blue;">下面的讨论简要介绍mysql shell的功能。有关更多信息，请参阅mysql shell手册，网址为https://dev.mysql.com/doc/mysql shell/en/。</p><p>
     MySQL Shell includes the following APIs implemented in JavaScript
     and Python which you can use to develop code that interacts with
     MySQL.
-</p>
-<div class="itemizedlist">
-<ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
-        The X DevAPI enables you to work with both relational and
-        document data when MySQL Shell is connected to a MySQL server
-        using the X Protocol. For more information, see
-        <a class="xref" href="document-store.html" title="Chapter 19 Using MySQL as a Document Store">Chapter 19, <i>Using MySQL as a Document Store</i></a>. For documentation on the
-        concepts and usage of X DevAPI, see
-        <a class="ulink" href="https://dev.mysql.com/doc/x-devapi-userguide/en/" target="_top">X DevAPI User Guide</a>.
-      </p></li><li class="listitem"><p>
-        The AdminAPI enables you to work with InnoDB cluster,
-        which provides an integrated solution for high availability and
-        scalability using InnoDB based MySQL databases, without
-        requiring advanced MySQL expertise. See
-        <a class="xref" href="mysql-innodb-cluster-userguide.html" title="Chapter 20 InnoDB Cluster">Chapter 20, <i>InnoDB Cluster</i></a>.
-</p></li></ul>
-</div>
-<p>
-    MySQL Shell is available in two editions, the Community Edition
-    and the Commercial Edition. The Community Edition is available free
-    of charge. The Commercial Edition provides additional Enterprise
-    features at low cost.
-</p>
+</p><p style="color:blue;">mysql shell包含以下用javascript和python实现的api，您可以使用它们来开发与mysql交互的代码。</p>
+    <div class="itemizedlist">
+        <ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+            The X DevAPI enables you to work with both relational and
+            document data when MySQL Shell is connected to a MySQL server
+            using the X Protocol. For more information, see
+            <a class="xref" href="document-store.html" title="Chapter&nbsp;19&nbsp;Using MySQL as a Document Store">Chapter&nbsp;19, <i>Using MySQL as a Document Store</i></a>. For documentation on the
+            concepts and usage of X DevAPI, see
+            <a class="ulink" href="https://dev.mysql.com/doc/x-devapi-userguide/en/" target="_top">X DevAPI User Guide</a>.
+        </p><p style="color:blue;">当mysql shell使用x协议连接到mysql服务器时，x devapi允许您处理关系数据和文档数据。有关更多信息，请参阅第19章，使用mysql作为文档存储。有关x devapi的概念和用法的文档，请参阅x devapi用户指南。</p></li><li class="listitem"><p>
+            The AdminAPI enables you to work with InnoDB cluster,
+            which provides an integrated solution for high availability and
+            scalability using InnoDB based MySQL databases, without
+            requiring advanced MySQL expertise. See
+            <a class="xref" href="mysql-innodb-cluster-userguide.html" title="Chapter&nbsp;20&nbsp;InnoDB Cluster">Chapter&nbsp;20, <i>InnoDB Cluster</i></a>.
+        </p><p style="color:blue;">adminapi使您能够使用innodb cluster，它使用基于innodb的mysql数据库为高可用性和可伸缩性提供了一个集成的解决方案，而不需要高级的mysql专业知识。见第20章，InnoDB集群。</p></li></ul>
+    </div>
+    <p>
+        MySQL Shell is available in two editions, the Community Edition
+        and the Commercial Edition. The Community Edition is available free
+        of charge. The Commercial Edition provides additional Enterprise
+        features at low cost.
+    </p><p style="color:blue;">mysql shell有两个版本，社区版和商业版。社区版是免费的。商业版以低成本提供额外的企业功能。</p>
 </div>
 <div class="copyright-footer">
 
 </div>
 <div class="navfooter">
-<hr>
-<table width="100%" summary="Navigation footer">
-<tr>
-<td width="40%" align="left"><a accesskey="p" href="group-replication.html">Prev</a></td>
-<td width="20%" align="center"><a accesskey="u" href="">Up</a></td>
-<td width="40%" align="right"> <a accesskey="n" href="document-store.html">Next</a></td>
-</tr>
-<tr>
-<td width="40%" align="left" valign="top">Chapter 17 Group Replication</td>
-<td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td>
-<td width="40%" align="right" valign="top">Chapter 19 Using MySQL as a Document Store</td>
-</tr>
-</table>
+    <hr>
+    <table width="100%" summary="Navigation footer">
+        <tbody><tr>
+            <td width="40%" align="left"><a accesskey="p" href="group-replication.html">Prev</a></td>
+            <td width="20%" align="center"><a accesskey="u" href="">Up</a></td>
+            <td width="40%" align="right">&nbsp;<a accesskey="n" href="document-store.html">Next</a></td>
+        </tr>
+        <tr>
+            <td width="40%" align="left" valign="top">Chapter&nbsp;17 Group Replication</td>
+            <td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td>
+            <td width="40%" align="right" valign="top">Chapter&nbsp;19 Using MySQL as a Document Store</td>
+        </tr>
+        </tbody></table>
 </div>
-</body>
-</html>
+
+
+</body></html>
